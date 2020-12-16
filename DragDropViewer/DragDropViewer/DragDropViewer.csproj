@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -6,14 +6,6 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>DragDropViewer.ico</ApplicationIcon>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Content Include="..\..\..\ShellBoost-Samples\ShellBoost.Samples\ShellBoost.Samples.Overview\ShellBoost.Core.xml" Link="ShellBoost.Core.xml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="..\..\..\ShellBoost-Samples\ShellBoost.Samples\ShellBoost.Samples.Overview\ShellBoost.Core.dll" Link="ShellBoost.Core.dll" />
-  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="ShellBoost.Core">

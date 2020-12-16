@@ -29,9 +29,13 @@ namespace DragDropViewer
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.textBoxDragZone = new System.Windows.Forms.TextBox();
             this.labelHint = new System.Windows.Forms.Label();
+            this.contextMenuStripZone = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItemShowClipboard = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStripZone.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxDragZone
@@ -58,6 +62,20 @@ namespace DragDropViewer
             this.labelHint.TabIndex = 1;
             this.labelHint.Text = "Drag Something Here";
             // 
+            // contextMenuStripZone
+            // 
+            this.contextMenuStripZone.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemShowClipboard});
+            this.contextMenuStripZone.Name = "contextMenuStripZone";
+            this.contextMenuStripZone.Size = new System.Drawing.Size(201, 26);
+            // 
+            // toolStripMenuItemShowClipboard
+            // 
+            this.toolStripMenuItemShowClipboard.Name = "toolStripMenuItemShowClipboard";
+            this.toolStripMenuItemShowClipboard.Size = new System.Drawing.Size(200, 22);
+            this.toolStripMenuItemShowClipboard.Text = "Show clipboard content";
+            this.toolStripMenuItemShowClipboard.Click += new System.EventHandler(this.toolStripMenuItemShowClipboard_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -69,6 +87,7 @@ namespace DragDropViewer
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Drag & Drop View";
+            this.contextMenuStripZone.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -78,6 +97,8 @@ namespace DragDropViewer
 
         private System.Windows.Forms.TextBox textBoxDragZone;
         private System.Windows.Forms.Label labelHint;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStripZone;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemShowClipboard;
     }
 }
 

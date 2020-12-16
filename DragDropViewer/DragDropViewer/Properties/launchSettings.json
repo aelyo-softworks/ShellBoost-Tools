@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DragDropViewer": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
