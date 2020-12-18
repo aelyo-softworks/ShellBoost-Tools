@@ -58,9 +58,9 @@ namespace DragDropViewer
             this.labelHint.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelHint.Location = new System.Drawing.Point(8, 8);
             this.labelHint.Name = "labelHint";
-            this.labelHint.Size = new System.Drawing.Size(214, 30);
+            this.labelHint.Size = new System.Drawing.Size(504, 30);
             this.labelHint.TabIndex = 1;
-            this.labelHint.Text = "Drag Something Here";
+            this.labelHint.Text = "Drag something here or right-click to open the menu";
             // 
             // contextMenuStripZone
             // 
@@ -74,7 +74,7 @@ namespace DragDropViewer
             this.toolStripMenuItemShowClipboard.Name = "toolStripMenuItemShowClipboard";
             this.toolStripMenuItemShowClipboard.Size = new System.Drawing.Size(200, 22);
             this.toolStripMenuItemShowClipboard.Text = "Show clipboard content";
-            this.toolStripMenuItemShowClipboard.Click += new System.EventHandler(this.toolStripMenuItemShowClipboard_Click);
+            this.toolStripMenuItemShowClipboard.Click += new System.EventHandler(this.ToolStripMenuItemShowClipboard_Click);
             // 
             // Main
             // 

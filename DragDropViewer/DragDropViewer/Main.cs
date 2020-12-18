@@ -46,7 +46,7 @@ namespace DragDropViewer
                         DumpFormat(dataObject, sb, format);
                         sb.AppendLine();
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
                         sb.AppendLine(" *** Error with format '" + format + "': " + e.Message);
                         sb.AppendLine();
@@ -56,7 +56,7 @@ namespace DragDropViewer
             textBoxDragZone.Text = sb.ToString();
         }
 
-        private void DumpFormat(IDataObject dataObject, StringBuilder sb, string format)
+        private static void DumpFormat(IDataObject dataObject, StringBuilder sb, string format)
         {
             sb.AppendLine(format);
 
@@ -150,7 +150,7 @@ namespace DragDropViewer
             return string.Format("{0}", data);
         }
 
-        private void toolStripMenuItemShowClipboard_Click(object sender, EventArgs e)
+        private void ToolStripMenuItemShowClipboard_Click(object sender, EventArgs e)
         {
             labelHint.Visible = false;
             DumpDataObject(Clipboard.GetDataObject());
